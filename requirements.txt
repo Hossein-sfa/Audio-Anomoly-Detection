@@ -1,0 +1,11 @@
+streamlit
+streamlit-webrtc
+torch
+torchaudio
+librosa
+soundfile
+plotly
+av
+pyyaml
+numpy
+watchdog

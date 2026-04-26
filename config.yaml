@@ -1,0 +1,41 @@
+version: "STgram-MFN-cls5-noevent"
+time_version: False
+
+manifest_csv: "/content/drive/MyDrive/msed_data_5class_noevent/manifest_cls5.csv"
+num_classes: 5
+
+sr: 16000
+n_fft: 1024
+n_mels: 128
+win_length: 1024
+hop_length: 512
+power: 2.0
+secs: 10
+
+cuda: True
+random_seed: 42
+
+epochs: 80
+batch_size: 64
+num_workers: 2
+
+lr: 3.0e-4
+weight_decay: 1.0e-3
+
+use_arcface: False
+m: 0.5
+s: 30
+sub: 1
+
+label_smoothing: 0.05
+early_patience: 10
+min_delta: 1.0e-4
+
+specaug: True
+time_mask_num: 4
+time_mask_max: 80
+freq_mask_num: 4
+freq_mask_max: 32
+
+wav_gain_db: 12.0
+eta_min: 1.0e-6
